@@ -4,7 +4,8 @@ import './card.scss';
 
 const Card: FunctionComponent = (): JSX.Element => {
   return (
-    <div className="flex flex-col rounded justify-center shadow-lg bg-primary-bg items-center w-full"
+    <div
+      className="flex flex-col rounded justify-center shadow-lg bg-primary-bg items-center w-full"
       id='card'
     >
       <div className="relative w-full">
