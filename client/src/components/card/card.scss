@@ -1,40 +1,19 @@
 @import '../../app/globals.scss';
 
-.bg-card{
-    background-color: var(--primary-grey);
-  
-}
-.bg-card {
-    background-color: var(--primary-bg);
+#card {
+    transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
 
-  
-    transform: rotateX(0deg) rotateY(0deg) translateZ(0);
-
-    transition: transform 0.5s ease-out;
-  
-  
     &:hover {
-      transform: rotateX(-10deg) rotateY(10deg) translateZ(10px);
+        transform: perspective(800px) rotateY(10deg) translateY(20px);
     }
-  }
-  
 
-.card-img{
-    width: 15rem;
-    height: 17rem;
-    max-height: 25rem;
-    max-width: 15rem;
-}
-.bg-card-button{
-    background-color: var(--primary-blue);
-  
-}
-.bg-card-button:hover{
-    background-color: rgb(24, 67, 176)
-  
-}
-.bg-sub {
-    background: rgba(249,249,249,.3);
-    backdrop-filter: blur(5px) 
+    .bg-sub {
+        background: rgba(249, 249, 249, .3);
+        backdrop-filter: blur(5px)
+    }
 
+    .card-button:hover {
+        background-color: rgb(24, 67, 176)
+    }
 }
