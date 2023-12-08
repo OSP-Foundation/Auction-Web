@@ -1,0 +1,17 @@
+@import '../../app/globals.scss';
+
+#intro-home {
+    background-image: url("../../assets/image/IntroBanner.png");
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+
+    div.card .single-line {
+        @include LimitLine($lines: 1)
+    }
+
+    @media screen and (max-width:767px) {
+        background-image: none;
+    }
+}

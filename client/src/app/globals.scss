@@ -3,12 +3,37 @@
 @tailwind utilities;
 
 :root {
-  --primary-bg: #eff0f4;
+  --primary-bg: #F7F7F6;
   --primary-black: #333;
+  --secondary-black: #666;
   --primary-blue: #1a5aff;
+  --secondary-blue: rgb(24, 67, 176);
   --primary-grey: #bfc2c4;
+  --primary-border: #e4e4e4;
+  --primary-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 body {
   box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p {
+  word-wrap: break-word !important;
+}
+
+@mixin LimitLine($lines: 2) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: $lines;
+  /* number of lines to show */
+  line-clamp: $lines;
+  -webkit-box-orient: vertical;
 }

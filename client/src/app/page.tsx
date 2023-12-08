@@ -1,9 +1,9 @@
-import { Card } from "@/components"
+import { Intro } from "@/components/home";
+
 export default function Home() {
   return (
     <main>
-      <Card/>
-
+      <Intro />
     </main>
   )
 }

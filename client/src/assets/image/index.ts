@@ -1,0 +1,1 @@
+export { default as IntroBanner } from './IntroBanner.png'

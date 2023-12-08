@@ -1,5 +1,6 @@
 // components/Card.tsx
 import React, { FunctionComponent } from 'react';
+import { Amount } from '..';
 import './card.scss';
 
 const Card: FunctionComponent = (): JSX.Element => {
@@ -28,7 +29,9 @@ const Card: FunctionComponent = (): JSX.Element => {
       <div className="flex flex-row w-full p-4">
         <div className="mr-auto text-left">
           <h6 className="text-xs font-bold">Current bid</h6>
-          <p className="text-sm font-bold">$10</p>
+          <p className="text-sm font-bold">
+            <Amount data={10} />
+          </p>
         </div>
         <div className="text-right">
           <h6 className="text-xs font-bold">#1-StarkLee</h6>

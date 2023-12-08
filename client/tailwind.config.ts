@@ -9,10 +9,23 @@ const config: Config = {
   theme: {
     colors: {
       "white": "#fff",
+      "transparent": "transparent",
       "primary-bg": "var(--primary-bg)",
       "primary-black": "var(--primary-black)",
       "primary-blue": "var(--primary-blue)",
-      "primary-grey": "var(--primary-grey)"
+      "primary-grey": "var(--primary-grey)",
+      "secondary-black": "var(--secondary-black)",
+      "secondary-blue": "var(--secondary-blue)",
+      "primary-border": "var(--primary-border)"
+    },
+    extend: {
+      spacing: {
+        "container": "1rem",
+        "container-md": "1.5rem 5rem"
+      },
+      boxShadow: {
+        "primary-box-shadow": "var(--primary-box-shadow)"
+      }
     }
   },
   plugins: [],
