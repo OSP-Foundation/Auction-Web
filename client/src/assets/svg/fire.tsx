@@ -1,11 +1,11 @@
 import React, { FunctionComponent } from 'react'
 
-interface params {
+interface props {
     width: string,
     height: string
 }
 
-const FireSvg: FunctionComponent<params> = ({ width, height }): JSX.Element => {
+const Fire: FunctionComponent<props> = ({ width, height }): JSX.Element => {
     return (
         <svg
             width={width}
@@ -60,4 +60,4 @@ const FireSvg: FunctionComponent<params> = ({ width, height }): JSX.Element => {
     )
 }
 
-export default FireSvg
+export default Fire

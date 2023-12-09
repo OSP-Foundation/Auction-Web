@@ -1,5 +1,5 @@
 import React, { FunctionComponent } from 'react'
-import { FireSvg } from '@/assets/svg'
+import { Fire } from '@/assets/svg'
 import { Amount } from '..'
 import './style.scss'
 
@@ -38,7 +38,7 @@ const Intro: FunctionComponent = (): JSX.Element => {
                 <div className="card p-3 bg-white flex flex-col gap-3 border border-primary-border rounded-md shadow-primary-box-shadow">
                     <div className='flex flex-row gap-4 items-center'>
                         <h1 className='text-primary-black min-w-[8rem] capitalize text-sm font-bold flex flex-row gap-1 items-center'>
-                            highest price<FireSvg
+                            highest price<Fire
                                 width='20px'
                                 height='20px'
                             />

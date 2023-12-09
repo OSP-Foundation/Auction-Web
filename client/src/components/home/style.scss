@@ -15,3 +15,14 @@
         background-image: none;
     }
 }
+
+#carousel-home {
+    .swiper {
+        height: 100% !important;
+    }
+
+    .swiper-button-disabled {
+        background: rgba($color: $secondary-black, $alpha: .4) !important;
+        border-color: transparent !important;
+    }
+}
