@@ -15,7 +15,7 @@ const Card: FunctionComponent = (): JSX.Element => {
         alt="image"
       />
 
-      <div className='absolute px-2 bottom-2 left-0 w-full'>
+      <div className='absolute bg-transparent px-2 bottom-2 left-0 w-full'>
         <div className="rounded-t-lg grid grid-cols-[calc(100%-4.5rem)_4rem] gap-[.5rem] bg-sub text-white p-4">
           <div className="text-left">
             <h6 className="text-xs capitalize oneLine font-bold">Splash Circle this worked for me when I removed width from breakpoint and</h6>

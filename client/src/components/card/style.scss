@@ -18,7 +18,8 @@
         -moz-transition: all .5s ease-in-out;
 
         &:hover {
-            background-color: var(--secondary-blue)
+            background-color: var(--secondary-blue);
+            transform: translateY(-2px);
         }
     }
 
