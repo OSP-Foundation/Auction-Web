@@ -2,11 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+$secondary-black: #666;
+
 :root {
-  --primary-bg: #F7F7F6;
+  --primary-bg: #f3f3f5;
   --primary-black: #333;
-  --secondary-black: #666;
-  --primary-blue: #1a5aff;
+  --secondary-black: #{$secondary-black};
+  --primary-blue: #4169E1;
   --secondary-blue: rgb(24, 67, 176);
   --primary-grey: #bfc2c4;
   --primary-border: #e4e4e4;

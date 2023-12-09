@@ -1,8 +1,9 @@
 import type { Metadata } from 'next'
-import { Poppins } from 'next/font/google'
+import { DM_Sans } from 'next/font/google'
+import { NavBar } from '@/components'
 import './globals.scss'
 
-const poppins = Poppins({ subsets: ['latin'], weight: "400" })
+const dm_sans = DM_Sans({ subsets: ['latin'], weight: "400" })
 
 export const metadata: Metadata = {
   title: 'Auction',
@@ -16,7 +17,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={poppins.className}>{children}</body>
+      <body className={dm_sans.className}>
+        <NavBar />
+        {children}
+      </body>
     </html>
   )
 }

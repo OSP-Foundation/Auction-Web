@@ -20,8 +20,8 @@ const config: Config = {
     },
     extend: {
       spacing: {
-        "container": "1rem",
-        "container-md": "1.5rem 5rem"
+        "container": "1.5rem 1rem",
+        "container-md": "2rem 5rem"
       },
       boxShadow: {
         "primary-box-shadow": "var(--primary-box-shadow)"

@@ -1,0 +1,28 @@
+@import '../../app/globals.scss';
+
+#card {
+    transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+
+    &:hover {
+        transform: perspective(800px) rotateY(10deg) translateY(-10px) scale(.9);
+    }
+
+    .bg-sub {
+        background: rgba(249, 249, 249, .3);
+        backdrop-filter: blur(5px)
+    }
+
+    .card-button {
+        transition: all .5s ease-in-out;
+        -moz-transition: all .5s ease-in-out;
+
+        &:hover {
+            background-color: var(--secondary-blue)
+        }
+    }
+
+    .oneLine {
+        @include LimitLine($lines: 1);
+    }
+}
