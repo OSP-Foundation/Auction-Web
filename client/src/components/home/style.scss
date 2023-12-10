@@ -11,7 +11,7 @@
         @include LimitLine($lines: 1)
     }
 
-    @media screen and (max-width:767px) {
+    @media screen and (width <=767px) {
         background-image: none;
     }
 }

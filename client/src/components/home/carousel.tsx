@@ -19,7 +19,7 @@ const Carousel: FunctionComponent = (): JSX.Element => {
     }>({})
 
     return (
-        <section className='p-container md:p-container-md bg-white' id='carousel-home'>
+        <section className='p-container md:p-container-md py-[3rem] md:py-[5rem] bg-white' id='carousel-home'>
             <div className='flex flex-row gap-3 items-center'>
                 <h1 className='text-xl text-primary-black font-bold capitalize mr-auto'>
                     limited auction
@@ -67,7 +67,7 @@ const Carousel: FunctionComponent = (): JSX.Element => {
                 </button>
             </div>
 
-            <div className='relative'>
+            <div className='relative mt-5'>
                 <Swiper
                     modules={[Navigation]}
                     className='my-5'
