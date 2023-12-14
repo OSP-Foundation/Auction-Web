@@ -1,11 +1,11 @@
-import React, { FunctionComponent } from 'react'
+import React from 'react'
 
 interface props {
     width: string,
     height: string
 }
 
-const Fire: FunctionComponent<props> = ({ width, height }): JSX.Element => {
+const Fire = ({ width, height }: props) => {
     return (
         <svg
             width={width}

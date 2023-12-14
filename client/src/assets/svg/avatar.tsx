@@ -1,4 +1,4 @@
-import React, { FunctionComponent } from 'react'
+import React from 'react'
 
 interface props {
     width: string,
@@ -7,7 +7,7 @@ interface props {
     classPath?: string
 }
 
-const Avatar: FunctionComponent<props> = ({ width, height, classPath, className }): JSX.Element => {
+const Avatar = ({ width, height, classPath, className }: props) => {
     return (
         <svg
             width={width}

@@ -1,9 +1,9 @@
 // components/Card.tsx
-import React, { FunctionComponent } from 'react';
+import React from 'react';
 import { Amount } from '..';
 import './style.scss';
 
-const Card: FunctionComponent = (): JSX.Element => {
+const Card = () => {
   return (
     <div
       className="relative rounded-lg w-full"

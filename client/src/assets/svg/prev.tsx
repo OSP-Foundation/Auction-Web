@@ -1,4 +1,4 @@
-import React, { FunctionComponent } from 'react'
+import React from 'react'
 
 interface props {
     width: string,
@@ -6,7 +6,7 @@ interface props {
     className?: string
 }
 
-const Prev: FunctionComponent<props> = ({ className, width, height }): JSX.Element => {
+const Prev = ({ className, width, height }: props) => {
     return (
         <svg
             className={className}

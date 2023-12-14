@@ -1,6 +1,6 @@
 "use client"
 
-import React, { FunctionComponent, useRef } from 'react'
+import React, { useRef } from 'react'
 import { More, Next, Prev } from '@/assets/svg'
 import { Card } from '..';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -12,7 +12,7 @@ import 'swiper/css';
 // Import Manual Styled Styles
 import './style.scss'
 
-const Carousel: FunctionComponent = (): JSX.Element => {
+const Carousel = () => {
     const navs = useRef<{
         prev?: HTMLButtonElement,
         next?: HTMLButtonElement

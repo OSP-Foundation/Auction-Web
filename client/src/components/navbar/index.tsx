@@ -1,11 +1,11 @@
 "use client"
 
-import React, { FunctionComponent, useState } from 'react'
+import React, { useState } from 'react'
 import Link from 'next/link'
 import { Avatar, MagnifyingGlass } from '@/assets/svg'
 import './style.scss'
 
-const NavBar: FunctionComponent = (): JSX.Element => {
+const NavBar = () => {
     const [search, setSearch] = useState<boolean | string>(false);
 
     return (
