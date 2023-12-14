@@ -1,4 +1,3 @@
-import Footer from "@/components/footer";
 import { Intro } from "@/components/home";
 import dynamic from "next/dynamic";
 
@@ -9,7 +8,6 @@ export default function Home() {
     <main>
       <Intro />
       <Carousel />
-      <Footer />
     </main>
   )
 }

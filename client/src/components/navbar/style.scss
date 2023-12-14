@@ -1,0 +1,33 @@
+@import '../../app/globals.scss';
+
+header#navBar {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: transparent;
+    backdrop-filter: blur(3px);
+
+    @media screen and (width <=767px) {
+        position: unset;
+        background: var(--primary-bg);
+    }
+
+    button.login {
+        margin-left: 0;
+        color: white;
+        border: 1px solid var(--primary-blue);
+        background: var(--primary-blue);
+        transition: all .5s ease-in-out;
+        -moz-transition: all .5s ease-in-out;
+
+        &:hover {
+            background: var(--secondary-blue);
+            border-color: var(--secondary-blue);
+        }
+
+        @media screen and (width <=767px) {
+            display: none;
+        }
+    }
+}

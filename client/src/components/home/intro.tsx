@@ -1,9 +1,9 @@
-import React, { FunctionComponent } from 'react'
+import React from 'react'
 import { Fire } from '@/assets/svg'
 import { Amount } from '..'
 import './style.scss'
 
-const Intro: FunctionComponent = (): JSX.Element => {
+const Intro = () => {
     return (
         <section
             className='p-container md:p-container-md bg-primary-bg flex flex-col md:flex-row gap-3'

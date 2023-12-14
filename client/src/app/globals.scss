@@ -15,8 +15,14 @@ $secondary-black: #666;
   --primary-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
+* {
+  // for remove on click highlight color
+  -webkit-tap-highlight-color: transparent;
+}
+
 body {
   box-sizing: border-box;
+  position: relative;
 }
 
 h1,
@@ -28,6 +34,16 @@ h6,
 a,
 p {
   word-wrap: break-word !important;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+input,
+textarea,
+button {
+  outline: none !important;
 }
 
 @mixin LimitLine($lines: 2) {

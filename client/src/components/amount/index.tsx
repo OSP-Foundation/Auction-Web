@@ -1,10 +1,10 @@
-import React, { FunctionComponent } from 'react'
+import React from 'react'
 
 interface props {
     data: string | number
 }
 
-const Amount: FunctionComponent<props> = ({ data }): string => {
+const Amount = ({ data }: props): string => {
     let number: number = typeof data == 'string' ? parseFloat(data) : Number(data)
 
     if (number >= 10000000) {

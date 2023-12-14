@@ -5,8 +5,8 @@ import React, { FunctionComponent } from 'react'
 const Footer: FunctionComponent = (): JSX.Element => {
   return (
     <footer className="bg-white">
-       <div className='p-container md:p-container-md grid md:grid-cols-12  sm:grid-cols-none'> 
-        <div className="col-span-3 max-w-sm">
+      <div className='p-container md:p-container-md gap-5 grid grid-cols-1 lg:grid-cols-[30%_auto]'>
+        <div className="max-w-sm">
           <div className='flex'>
             <Tree
               width='2rem'
@@ -33,7 +33,7 @@ const Footer: FunctionComponent = (): JSX.Element => {
             </button>
           </div>
         </div>
-        <div className="col-span-9 grid md:grid-cols-4 gap-4  sm:grid-cols-none ">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 gap-5">
           <div className='text-secondary-black' >
             <h3 className='font-bold text-primary-black   mb-3'>Enterprice</h3>
             <ul>
