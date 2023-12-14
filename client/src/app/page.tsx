@@ -8,6 +8,8 @@ export default function Home() {
   return (
     <main>
       <Intro />
+      <Carousel />
+      <Footer />
     </main>
   )
 }
