@@ -26,3 +26,78 @@
         border-color: transparent !important;
     }
 }
+
+#about-big-card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .circles {
+        width: auto;
+        height: 100%;
+        aspect-ratio: 1/1;
+        border: 1px solid var(--primary-grey);
+        border-radius: 9999px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &::after {
+            content: "";
+            position: absolute;
+            aspect-ratio: 1/1;
+            height: 70%;
+            border: 1px solid var(--primary-grey);
+            border-radius: 9999px;
+        }
+    }
+
+    .balls-l {
+        &::before {
+            content: "";
+            height: 2.3rem;
+            width: 2.3rem;
+            background: white;
+            position: absolute;
+            top: 22%;
+            left: 15%;
+            border-radius: 9999px;
+        }
+
+        &::after {
+            content: "";
+            height: 1.7rem;
+            width: 1.7rem;
+            background: #60a5fa;
+            position: absolute;
+            bottom: 18%;
+            left: 30%;
+            border-radius: 9999px;
+        }
+    }
+
+    .balls-r {
+        &::before {
+            content: "";
+            height: 2rem;
+            width: 2rem;
+            background: #facc15;
+            position: absolute;
+            top: 20%;
+            right: 15%;
+            border-radius: 9999px;
+        }
+
+        &::after {
+            content: "";
+            height: 1.5rem;
+            width: 1.5rem;
+            background: #a3e635;
+            position: absolute;
+            bottom: 20%;
+            right: 30%;
+            border-radius: 9999px;
+        }
+    }
+}

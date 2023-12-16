@@ -14,7 +14,7 @@ const Service = () => {
             />
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 max-w-3xl w-full mx-auto">
-                <div className="p-3 bg-primary-bg border border-primary-border rounded w-full flex flex-row gap-3 items-center easy-in-out duration-500 hover:bg-white cursor-pointer">
+                <div className="p-3 bg-primary-bg border border-primary-border rounded-md w-full flex flex-row gap-3 items-center easy-in-out duration-500 hover:bg-white cursor-pointer">
                     <div className='bg-primary-border rounded-full aspect-square p-2'>
                         <Biding
                             width='2rem'
@@ -31,7 +31,7 @@ const Service = () => {
                         </p>
                     </div>
                 </div>
-                <div className="p-3 bg-primary-bg border border-primary-border rounded w-full flex flex-row gap-3 items-center easy-in-out duration-500 hover:bg-white cursor-pointer">
+                <div className="p-3 bg-primary-bg border border-primary-border rounded-md w-full flex flex-row gap-3 items-center easy-in-out duration-500 hover:bg-white cursor-pointer">
                     <div className='bg-primary-border rounded-full aspect-square p-2'>
                         <Sale
                             width='2rem'
