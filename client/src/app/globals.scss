@@ -5,7 +5,7 @@
 $secondary-black: #666;
 
 :root {
-  --primary-bg: #f3f3f5;
+  --primary-bg: #fafafa;
   --primary-black: #333;
   --secondary-black: #{$secondary-black};
   --primary-blue: #4169E1;
@@ -23,6 +23,7 @@ $secondary-black: #666;
 body {
   box-sizing: border-box;
   position: relative;
+  background: white;
 }
 
 h1,

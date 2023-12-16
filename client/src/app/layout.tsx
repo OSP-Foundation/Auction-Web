@@ -3,7 +3,7 @@ import { DM_Sans } from 'next/font/google'
 import { Footer, NavBar } from '@/components'
 import './globals.scss'
 
-const dm_sans = DM_Sans({ subsets: ['latin'], weight: "400" })
+const dm_sans = DM_Sans({ subsets: ['latin'], weight: "400", display: "swap", adjustFontFallback: false })
 
 export const metadata: Metadata = {
   title: 'Auction',
