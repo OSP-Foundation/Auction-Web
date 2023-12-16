@@ -7,7 +7,7 @@ const About = () => {
             <Titles
                 title={{
                     h1: ['about'],
-                    span: ['us']
+                    span: ['US']
                 }}
                 sub="Your bidding adventure starts now"
             />
