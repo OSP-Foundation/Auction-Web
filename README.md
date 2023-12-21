@@ -36,6 +36,8 @@ The blueprints are set, and the development journey has just begun! Your contrib
  - Socket.io: Real-time magic for live auctions and instant updates.
  - TypeScript: Enhanced code quality, maintainability, and error
    prevention.
+ - SCSS and Tailwind CSS: Seamless styling and customization for a
+   visually stunning and intuitive interface.
 
 ## Your Invitation to Build, Bid, and Belong:
 
