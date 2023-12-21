@@ -5,6 +5,7 @@
 $secondary-black: #666;
 
 :root {
+  // colors
   --primary-bg: #fafafa;
   --primary-black: #333;
   --secondary-black: #{$secondary-black};
@@ -12,7 +13,12 @@ $secondary-black: #666;
   --secondary-blue: rgb(24, 67, 176);
   --primary-grey: #bfc2c4;
   --primary-border: #e4e4e4;
+
+  // for box shadow
   --primary-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+  // for width
+  --w-7xl: 80rem;
 }
 
 * {
@@ -47,6 +53,7 @@ button {
   outline: none !important;
 }
 
+// for limiting lines
 @mixin LimitLine($lines: 2) {
   overflow: hidden;
   text-overflow: ellipsis;

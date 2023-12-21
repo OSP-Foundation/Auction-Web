@@ -1,0 +1,11 @@
+main#single-item {
+    section#main {
+        width: 100%;
+
+        @media screen and (width >=768px) {
+            display: grid;
+            grid-template-columns: calc(50% - .5rem) calc(50% - .5rem);
+            gap: 1rem;
+        }
+    }
+}

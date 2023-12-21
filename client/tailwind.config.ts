@@ -25,6 +25,9 @@ const config: Config = {
       },
       boxShadow: {
         "primary-box-shadow": "var(--primary-box-shadow)"
+      },
+      maxWidth: {
+        "7xl": "var(--w-7xl)"
       }
     }
   },

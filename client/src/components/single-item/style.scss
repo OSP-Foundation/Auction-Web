@@ -1,0 +1,47 @@
+@import '../../app/globals.scss';
+
+#item_imgs {
+    div#img {
+        width: 100%;
+        height: auto;
+        padding: .5rem;
+        display: flex;
+        border: 1px solid var(--primary-border);
+        border-radius: 1rem;
+
+        img {
+            width: 100%;
+            height: auto;
+            object-position: center;
+            object-fit: contain;
+            margin: auto;
+            border-radius: .5rem;
+        }
+    }
+}
+
+#item_thumbs {
+    div#img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1/1;
+        padding: .5rem;
+        display: flex;
+        border: 1px solid var(--primary-border);
+        border-radius: 1rem;
+
+        &:is(.swiper-slide-thumb-active) {
+            border-color: var(--primary-blue) !important;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 1/1;
+            object-position: center;
+            object-fit: cover;
+            margin: auto;
+            border-radius: .5rem;
+        }
+    }
+}
