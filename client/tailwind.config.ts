@@ -16,7 +16,8 @@ const config: Config = {
       "primary-grey": "var(--primary-grey)",
       "secondary-black": "var(--secondary-black)",
       "secondary-blue": "var(--secondary-blue)",
-      "primary-border": "var(--primary-border)"
+      "primary-border": "var(--primary-border)",
+      "pure-black": "var(--pure-black)"
     },
     extend: {
       spacing: {

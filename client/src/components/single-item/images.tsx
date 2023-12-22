@@ -7,36 +7,44 @@ import { SwiperSlide, Swiper } from 'swiper/react'
 import 'swiper/css';
 import './style.scss'
 
-const Images = () => {
+interface props {
+    data: Array<{
+        url: string
+    }>,
+    className: string
+}
+
+const Images = ({ data, className }: props) => {
     const ref = useRef<SwiperType>()
 
     const [thumbsSwiper, setThumbsSwiper] = useState<SwiperType | null>(null);
 
     return (
-        <Fragment>
+        <div
+            id='single-item-imgs'
+            className={className}
+        >
             <Swiper
                 modules={[Thumbs]}
                 id='item_imgs'
                 thumbs={{ swiper: thumbsSwiper }}
                 spaceBetween={0}
                 slidesPerView={1}
+                autoHeight
                 onSwiper={(swiper) => {
                     ref.current = swiper
                 }}
             >
                 {
-                    [1, 1, 1, 1]?.map?.((v, key: number) => {
+                    data?.map?.((v, key: number) => {
                         return (
-                            <SwiperSlide key={key}>
-                                <div id="img">
-                                    {
-                                        key == 3 ? <img
-                                            src='https://images.pexels.com/photos/90946/pexels-photo-90946.jpeg?cs=srgb&dl=pexels-math-90946.jpg&fm=jpg'
-                                        /> : <img
-                                            src={'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D'}
-                                        />
-                                    }
-                                </div>
+                            <SwiperSlide
+                                key={key}
+                                id="img"
+                            >
+                                <img
+                                    src={v?.url}
+                                />
                             </SwiperSlide>
                         )
                     })
@@ -53,26 +61,22 @@ const Images = () => {
                 onSwiper={setThumbsSwiper}
             >
                 {
-                    [1, 1, 1, 1]?.map?.((v, key: number) => {
+                    data?.map?.((v, key: number) => {
                         return (
                             <SwiperSlide
                                 key={key}
                                 id='img'
                                 className='cursor-pointer'
                             >
-                                {
-                                    key == 3 ? <img
-                                        src='https://images.pexels.com/photos/90946/pexels-photo-90946.jpeg?cs=srgb&dl=pexels-math-90946.jpg&fm=jpg'
-                                    /> : <img
-                                        src={'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D'}
-                                    />
-                                }
+                                <img
+                                    src={v?.url}
+                                />
                             </SwiperSlide>
                         )
                     })
                 }
             </Swiper>
-        </Fragment>
+        </div>
     )
 }
 
