@@ -51,7 +51,7 @@ const NavBar = () => {
                     <div className='mx-auto md:mr-0 md:ml-auto flex flex-row items-center gap-3'>
                         <Link
                             className='capitalize text-sm text-secondary-black easy-in-out duration-500 hover:text-primary-blue'
-                            href={'#'}
+                            href={'/'}
                         >
                             home
                         </Link>
