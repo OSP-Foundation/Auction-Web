@@ -1,9 +1,9 @@
 import React from 'react'
 import dynamic from 'next/dynamic'
-import { Bider } from '@/components/single-item'
+import { Bider } from '@/components/shop/item'
 import { Amount } from '@/components'
 
-const Images = dynamic(() => import('@/components/single-item/images'), { ssr: false })
+const Images = dynamic(() => import('@/components/shop/item/images'), { ssr: false })
 
 import './style.scss'
 
@@ -69,7 +69,7 @@ const Page = () => {
                     </h1>
 
                     <div className="flex flex-row items-center gap-3">
-                        <div className='flex flex-row gap-2 items-center bg-primary-bg rounded-full px-2 py-1'>
+                        <div className='flex flex-row gap-2 items-center bg-primary-bg rounded-full px-3 py-2'>
                             <img
                                 className='aspect-square object-center object-cover max-w-[2rem] w-full rounded-full border-2 border-primary-border'
                                 src="https://wallpapers.com/images/hd/pretty-profile-pictures-i1rumnm6oi0lry1s.jpg"
@@ -158,7 +158,7 @@ const Page = () => {
                             {
                                 [1, 2, 3, 4, 5, 1, 2, 3, 4, 5]?.map((v, k: number) => {
                                     return <Bider
-                                        className='w-full gap-3 py-2 px-4'
+                                        className='w-full gap-3 px-4'
                                         data={{ date: "20/12/2023 13:10" }}
                                         key={k}
                                     />
