@@ -1,6 +1,6 @@
 "use client"
 
-import React, { Fragment, useRef, useState } from 'react'
+import React, { useRef, useState } from 'react'
 import { Thumbs } from 'swiper/modules'
 import type { Swiper as SwiperType } from 'swiper'
 import { SwiperSlide, Swiper } from 'swiper/react'

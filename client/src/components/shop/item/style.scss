@@ -1,4 +1,4 @@
-@import '../../app/globals.scss';
+@import '../../../app/globals.scss';
 
 div#single-item-imgs {
     #item_imgs {
@@ -63,10 +63,6 @@ div#bider-card {
         &:hover {
             display: block;
         }
-    }
-
-    button.request:active~.comment {
-        display: none !important;
     }
 
     &:active {
