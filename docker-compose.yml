@@ -1,0 +1,41 @@
+# for production mode
+
+version: '3.8'
+
+services:
+  client:
+    build: 
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - 3000:3000
+    environment:
+      BACK_END: http://server:5000
+    networks:
+      - app-network
+  server:
+    build: 
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - 5000:5000
+    environment:
+      PORT: 5000
+      DB_URL: mongodb://db/auction
+    networks:
+      - app-network
+  db:
+    image: mongo:7.0.4-jammy
+    ports:
+      - 27017:27017
+    volumes:
+      - data-volume:/data/db
+    networks:
+      - app-network
+
+volumes:
+   data-volume:
+
+networks:
+   app-network:
+     driver: bridge
