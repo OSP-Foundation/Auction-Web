@@ -10,11 +10,11 @@ export const metadata: Metadata = {
   description: 'Bid your dream product',
 }
 
-export default function RootLayout({
+const RootLayout = ({
   children,
 }: {
   children: React.ReactNode
-}) {
+}) => {
   return (
     <html lang="en">
       <body className={dm_sans.className}>
@@ -25,3 +25,5 @@ export default function RootLayout({
     </html>
   )
 }
+
+export default RootLayout

@@ -4,8 +4,8 @@ import React, { FunctionComponent } from 'react'
 
 const Footer: FunctionComponent = (): JSX.Element => {
   return (
-    <footer className="bg-white">
-      <div className='p-container md:p-container-md gap-5 grid grid-cols-1 lg:grid-cols-[30%_auto]'>
+    <footer className="p-container md:p-container-md max-w-7xl w-full mx-auto">
+      <div className='w-full gap-5 grid grid-cols-1 lg:grid-cols-[30%_auto]'>
         <div className="max-w-sm">
           <div className='flex'>
             <Tree

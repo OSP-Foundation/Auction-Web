@@ -20,7 +20,10 @@ const Carousel = () => {
     }>({})
 
     return (
-        <section className='p-container md:p-container-md flex flex-col' id='carousel-home'>
+        <section
+            className='p-container md:p-container-md max-w-7xl w-full mx-auto flex flex-col'
+            id='carousel-home'
+        >
             <Titles
                 title={{
                     h1: ['The', 'Provides Variety Of'],
@@ -29,7 +32,7 @@ const Carousel = () => {
                 sub="Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Has Been The Industry's Standard Dummy Text Ever Since The 1500s"
             />
 
-            <div className='flex flex-col gap-5 mt-[2.5rem] max-w-7xl w-full mx-auto'>
+            <div className='flex flex-col gap-5 mt-[2.5rem] w-full mx-auto'>
                 <div className='flex flex-row gap-3 items-center'>
                     <h1 className='text-xl text-primary-black font-medium capitalize mr-auto'>
                         limited auction

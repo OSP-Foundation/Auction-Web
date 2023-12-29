@@ -11,9 +11,9 @@ const NavBar = () => {
     return (
         <header
             id='navBar'
-            className='p-container py-4 md:p-container-md md:py-4 shadow-primary-box-shadow flex items-center'
+            className='shadow-primary-box-shadow flex items-center'
         >
-            <div className='flex flex-col gap-2 items-center max-w-7xl w-full mx-auto'>
+            <div className='p-container py-4 md:p-container-md md:py-4 flex flex-col gap-2 items-center max-w-7xl w-full mx-auto'>
                 <div className='flex flex-col md:flex-row gap-3 md:gap-5 items-center w-full'>
                     <div className="flex flex-row w-full md:w-auto items-center gap-2">
                         <button

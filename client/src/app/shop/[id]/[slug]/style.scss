@@ -1,60 +1,59 @@
 main#single-item {
-    section#main {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 1rem;
+
+    @media screen and (width >=768px) {
+        gap: 0;
+        clear: both;
+        display: block;
         width: 100%;
-        display: flex;
-        flex-direction: column-reverse;
-        gap: 1rem;
 
-        @media screen and (width >=768px) {
+        &:before,
+        &::after {
+            content: '';
+            display: table;
             clear: both;
-            display: block;
-            width: 100%;
-
-            &:before,
-            &::after {
-                content: '';
-                display: table;
-                clear: both;
-            }
-
-            div#left {
-                vertical-align: top;
-                float: left;
-                width: calc(50% - .5rem);
-            }
-
-            div#right {
-                margin: 0;
-                position: sticky;
-                top: 1rem;
-                float: right;
-                width: calc(50% - .5rem);
-            }
         }
 
-        div#live {
-            max-height: 20rem;
-            height: auto;
-            overflow-y: auto;
-            scrollbar-width: 5px;
-            scrollbar-color: var(--secondary-black) transparent;
+        section#left {
+            vertical-align: top;
+            float: left;
+            width: calc(50% - 1rem);
+        }
 
-            &::-webkit-scrollbar {
-                position: absolute !important;
-                width: 5px;
-            }
+        section#right {
+            margin: 0;
+            position: sticky;
+            top: 1rem;
+            float: right;
+            width: calc(50% - 1rem);
+        }
+    }
 
-            &::-webkit-scrollbar-track {
-                background: transparent;
-            }
+    div#live {
+        max-height: 20rem;
+        height: auto;
+        overflow-y: auto;
+        scrollbar-width: 5px;
+        scrollbar-color: var(--secondary-black) transparent;
 
-            &::-webkit-scrollbar-thumb {
-                background: var(--secondary-black);
-                border-radius: 999px;
+        &::-webkit-scrollbar {
+            position: absolute !important;
+            width: 5px;
+        }
 
-                &:active {
-                    background: var(--primary-grey) !important;
-                }
+        &::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: var(--secondary-black);
+            border-radius: 999px;
+
+            &:active {
+                background: var(--primary-grey) !important;
             }
         }
     }
