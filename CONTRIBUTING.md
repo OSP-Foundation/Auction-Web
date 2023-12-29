@@ -4,7 +4,7 @@ Thank you for your interest in contributing to Auction Web! Please take a moment
 
 ## Code of Conduct
 
-This project and everyone participating in it is governed by the [Code of Conduct](CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report any unacceptable behavior.
+This project and everyone participating in it is governed by the [Code of Conduct](CODE-OF-CONDUCT.md). By participating, you are expected to uphold this code. Please report any unacceptable behavior.
 
 ## How to Contribute
 
