@@ -1,0 +1,73 @@
+@import '../../../app/globals.scss';
+
+div#single-item-imgs {
+    #item_imgs {
+        div#img {
+            width: 100%;
+            height: auto;
+            padding: .5rem;
+            display: flex;
+            border: 1px solid var(--primary-border);
+            border-radius: 1rem;
+
+            img {
+                width: 100%;
+                height: auto;
+                object-position: center;
+                object-fit: contain;
+                margin: auto;
+                border-radius: .5rem;
+            }
+        }
+    }
+
+    #item_thumbs {
+        div#img {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 1/1;
+            padding: .5rem;
+            display: flex;
+            border: 1px solid var(--primary-border);
+            border-radius: 1rem;
+
+            &:is(.swiper-slide-thumb-active) {
+                border-color: var(--primary-blue) !important;
+            }
+
+            img {
+                width: 100%;
+                height: auto;
+                aspect-ratio: 1/1;
+                object-position: center;
+                object-fit: cover;
+                margin: auto;
+                border-radius: .5rem;
+            }
+        }
+    }
+}
+
+div#bider-card {
+    .comment {
+        display: none;
+        position: absolute;
+        width: calc(100% - 1rem);
+        left: .5rem;
+        background: white;
+        padding: 1rem;
+        border-radius: .5rem;
+        box-shadow: var(--primary-box-shadow);
+        z-index: 100;
+
+        &:hover {
+            display: block;
+        }
+    }
+
+    &:active {
+        .comment {
+            display: block;
+        }
+    }
+}

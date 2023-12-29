@@ -1,0 +1,48 @@
+# for development mode
+
+version: '3.8'
+
+services:
+  client:
+    build: 
+      context: ./client
+      dockerfile: Dockerfile
+    ports:
+      - 3000:3000
+    environment:
+      BACK_END: http://server:5000
+    networks:
+      - app-network
+    volumes:
+      - ./client:/front-end # local files mounting to volume (workdir)
+      - /front-end/node_modules # This line creates a named volume named node_modules for the /front-end/node_modules directory inside the container
+  server:
+    build: 
+      context: ./server
+      dockerfile: Dockerfile
+    ports:
+      - 5000:5000
+    environment:
+      PORT: 5000
+      DB_URL: mongodb://db/auction
+    networks:
+      - app-network
+    volumes:
+      - ./server:/back-end # local files mounting to volume (workdir)
+      - /back-end/node_modules # This line creates a named volume named node_modules for the /back-end/node_modules directory inside the container
+  db:
+    image: mongo:7.0.4-jammy
+    ports:
+      - 27017:27017
+    volumes:
+      - data-volume:/data/db
+    networks:
+      - app-network
+
+volumes:
+   data-volume:
+   node_modules:
+
+networks:
+   app-network:
+     driver: bridge
