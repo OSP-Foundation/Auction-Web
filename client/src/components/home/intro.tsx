@@ -6,14 +6,14 @@ import './style.scss'
 const Intro = () => {
     return (
         <section
-            className='p-container md:p-container-md bg-primary-bg flex'
+            className='bg-primary-bg flex'
             id='intro-home'
         >
             <div
                 data-image-credit="https://www.freepik.com/"
                 data-alt="https://www.freepik.com/"
                 data-freepik="https://www.freepik.com/"
-                className="bg-img max-w-7xl m-auto flex flex-col md:flex-row gap-3 w-full"
+                className="bg-img p-container md:p-container-md max-w-7xl m-auto flex flex-col md:flex-row gap-3 w-full"
             >
                 <div
                     className="flex flex-col gap-3 py-[4rem] children"

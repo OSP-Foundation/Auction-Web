@@ -1,6 +1,7 @@
 // components/Card.tsx
 import React from 'react';
 import { Amount } from '..';
+import Link from 'next/link';
 import './style.scss';
 
 const Card = () => {
@@ -32,9 +33,12 @@ const Card = () => {
           </div>
 
           <div className="pb-3 px-4 w-full flex flex-row gap-3">
-            <button className="bg-primary-blue card-button w-auto text-white text-sm py-2 px-3 rounded">
+            <Link
+              href={'/shop/id/slug'}
+              className="bg-primary-blue card-button w-auto text-white text-sm py-2 px-3 rounded"
+            >
               Place Bid
-            </button>
+            </Link>
 
             <div className="text-right ml-auto">
               <h6 className="text-xs text-secondary-black font-bold whitespace-nowrap capitalize">Current bid</h6>

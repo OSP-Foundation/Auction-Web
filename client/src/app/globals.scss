@@ -28,6 +28,8 @@ $secondary-black: #666;
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   box-sizing: border-box;
   position: relative;
   background: white;
@@ -50,6 +52,7 @@ a {
 
 input,
 textarea,
+a,
 button {
   outline: none !important;
 }
