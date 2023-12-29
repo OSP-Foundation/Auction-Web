@@ -34,7 +34,7 @@ If you encounter any issues with the project, please follow these steps to repor
 
 ## Code of Conduct
 
-Please adhere to the [Code of Conduct](CODE_OF_CONDUCT.md) in all interactions with the community.
+Please adhere to the [Code of Conduct](CODE-OF-CONDUCT.md) in all interactions with the community.
 
 ## License
 
