@@ -13,10 +13,13 @@ WORKDIR /front-end/client
 COPY ./client/package*.json ./
 
 # installing required packages
-RUN npm install && npm run build
+RUN npm install
 
 # copy local files to working directory
 COPY ./client ./
+
+# building files
+RUN npm run build
 
 EXPOSE 3000
 
@@ -33,13 +36,16 @@ FROM node:20.10.0-alpine
 WORKDIR /back-end/server
 
 # copying package.json & package-lock.json to WORKDIR
-COPY ./client/package*.json ./
+COPY ./server/package*.json ./
 
 # installing required packages
-RUN npm install && npm run build
+RUN npm install
 
 # copy local files to working directory
 COPY ./server ./
+
+# building files
+RUN npm run build
 
 EXPOSE 5000
 
